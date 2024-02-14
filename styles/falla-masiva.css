@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bs-primary: rgb(15, 45, 245);
+    --bs-cyan: #42e8b4;
+    --bs-purple: #b9badc;
+    --bs-purple-light: #c0c1d7c5;
+}
+
+.bg-cyan {
+    background: var(--bs-cyan);
+}
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.imagen_falla {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    max-width: 350px;
+}
+
+.lineamiento {
+    background: var(--bs-primary);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: .8rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.lineamiento__lista {
+    background: rgb(238, 240, 254);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.lineamiento__lista li {
+    color: var(--bs-primary);
+    font-weight: bold;
+    text-align: justify;
+}
+
+.validacion {
+    background: rgb(177, 219, 247);
+    border-radius: 10px;
+    color: var(--bs-primary);
+    font-size: .8rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.validacion p {
+    background: rgb(238, 240, 254);
+    border-radius: 10px;
+    color: rgb(222, 130, 171);
+    font-weight: bold;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.problema {
+    background: rgb(134, 150, 248);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: .8rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.boton-desc {
+    display: flex;
+}
+
+.boton-desc span {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+}
+
+.boton-desc span:nth-child(1) {
+    background: rgb(15, 6, 151);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 2rem;
+}
+
+.boton-desc span:nth-child(2) {
+    background: rgb(38, 91, 246);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+}
+
+.boton-desc:nth-child(2) span:nth-child(1) {
+    background: rgb(235, 79, 39);
+}
+
+.boton-desc:nth-child(2) span:nth-child(2) {
+    background: rgb(232, 165, 124);
+}
