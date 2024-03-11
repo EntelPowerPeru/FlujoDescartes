@@ -1,120 +1,136 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
-    --bs-primary: rgb(15, 45, 245);
-    --bs-cyan: #42e8b4;
-    --bs-purple: #b9badc;
-    --bs-purple-light: #c0c1d7c5;
+    --blue: #002eff;
+    --cyan: #42e8b4;
+    --grey: #a4a4a6;
+    --grey-light: #dbdbdb;
+    --orange: #ff560a;
 }
 
-.bg-cyan {
-    background: var(--bs-cyan);
+body {
+    min-height: 100vh;
+    background-color: var(--blue);
+    background-image: linear-gradient(147deg, var(--blue) 0%, var(--cyan) 100%);
+    font-family: Barlow, sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    height: 100vh;
+p {
+    margin: 0;
+}
+
+.imagen {
+    background: var(--blue);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 350px;
+    height: 350px;
 }
 
-.btn img {
-    width: 30px;
-    height: 30px;
-}
-
-.imagen_falla {
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
-    max-width: 350px;
-}
-
-.lineamiento {
-    background: var(--bs-primary);
-    border-radius: 10px;
-    color: #FFF;
-    font-size: .8rem;
-    padding: .5rem;
-    text-align: center;
-}
-
-.lineamiento__lista {
-    background: rgb(238, 240, 254);
-    border-radius: 10px;
-    list-style-type: none;
+.informacion {
+    background: var(--blue);
+    border-radius: 8px;
+    color: #fff;
     padding: 1rem;
 }
 
-.lineamiento__lista li {
-    color: var(--bs-primary);
-    font-weight: bold;
+.informacion__titulo {
+    border-bottom: 5px solid #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.informacion__lista {
+    counter-reset: list-number;
     text-align: justify;
+    margin-left: 10px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
 }
 
-.validacion {
-    background: rgb(177, 219, 247);
-    border-radius: 10px;
-    color: var(--bs-primary);
-    font-size: .8rem;
-    padding: .5rem;
+.informacion__lista-item {
+    list-style-type: none !important;
+    margin-bottom: 1rem;
+}
+
+.informacion__lista li:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--blue);
+}
+
+.informacion__imagen {
+    position: absolute;
+}
+
+.informacion__boton--white {
+    background: #fff;
+    color: var(--blue);
+}
+
+.desicion__titulo {
+    background: var(--orange);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.3rem;
     text-align: center;
-}
-
-.validacion p {
-    background: rgb(238, 240, 254);
-    border-radius: 10px;
-    color: rgb(222, 130, 171);
-    font-weight: bold;
-    list-style-type: none;
-    padding: 1rem;
-}
-
-.problema {
-    background: rgb(134, 150, 248);
-    border-radius: 10px;
-    color: #FFF;
-    font-size: .8rem;
     padding: .5rem;
-    text-align: center;
 }
 
-.boton-desc {
-    display: flex;
+.desicion__opcion {
+    position: relative;
 }
 
-.boton-desc span {
+.desicion__label {
+    background: var(--grey-light);
+    border-radius: 50%;
     display: flex;
-    font-weight: bold;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 100;
 }
 
-.boton-desc span:nth-child(1) {
-    background: rgb(15, 6, 151);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-size: 2rem;
+.desicion__boton {
+    background: var(--cyan);
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    height: 60px;
+    padding-left: 20px;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    z-index: 10;
 }
 
-.boton-desc span:nth-child(2) {
-    background: rgb(38, 91, 246);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 1rem;
+.desicion__boton--deshabilitado {
+    cursor: default !important;
 }
 
-.boton-desc:nth-child(2) span:nth-child(1) {
-    background: rgb(235, 79, 39);
-}
-
-.boton-desc:nth-child(2) span:nth-child(2) {
-    background: rgb(232, 165, 124);
+.boton-regresar {
+    background: var(--orange);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    padding: 1rem;
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }

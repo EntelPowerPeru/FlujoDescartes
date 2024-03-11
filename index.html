@@ -2,125 +2,134 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flujo de descartes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de descarte</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <div class="container px-3 pt-3">
-        <div class="title-header">
-            <img alt="Entel" src="assets/images/logo.png" class="title-header__logo" />
+    <div class="container py-5">
+        <header class="text-center text-white">
+            <h1 class="display-5 fw-bold titulo">Flujos de descartes móviles Cal In y Digital</h1>
 
-            <h1 class="display-5 fw-bold">Flujo de descartes</h1>
+            <p class="fst-italic lead mb-0">Revisa e ingresa al flujo que debes seguir según la falla o inconveniente
+                mencionado
+                por tu cliente:
+            </p>
+        </header>
 
-            <p>Cal y Cal Digital</p>
-        </div>
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-4 bg-white rounded">
+                        <table class="flujo-descarte">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2 class="flujo-descarte__titulo">Flujo de descartes de:</h2>
+                                    </th>
+                                    <th>
+                                        <h2 class="flujo-descarte__titulo">¿Cuándo lo utilizo?</h2>
+                                    </th>
+                                </tr>
+                            </thead>
 
-        <div class="alert-ask mb-3">
-            <img alt="Idea" src="assets/images/idea.png" class="alert-ask__image" />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-primary flujo-descarte__boton" href="#" role="button">
+                                            <img src="./assets/imagen/fibra-wifi-total.png" alt="" width="30"
+                                                class="me-2" />
+                                            Navegación - Sin servicio</a>
+                                    </td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">
+                                            Cuando no permite navegar en ninguna página o app. Aparece mensaje "Sin
+                                            Internet" o "No hay conexión a Internet“. O, cuando no tenga ninguno de los
+                                            3
+                                            servicios: navegación, telefonía y SMS.
+                                        </p>
+                                    </td>
+                                </tr>
 
-            <p class="bubble-left text-justify">¡Hola! Cuando un cliente presenta fallas en su servicio móvil, ¿Sabes
-                dónde encontrar el flujo a
-                seguir para realizar el paso a paso de los descartes correspondientes? ¡Conozcamoslo juntos!</p>
-        </div>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-primary flujo-descarte__boton"
+                                            href="./flujo-descarte-lentitud.html" role="button">
+                                            <img src="./assets/imagen/compartir.png" alt="" width="30" class="me-2" />
+                                            Navegación - Lentitud e
+                                            Intermitencia</a>
+                                    </td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">Las páginas web o aplicaciones se demoran
+                                            en cargar.</p>
+                                    </td>
+                                </tr>
 
-        <h2 class="subtitle mb-3"><span>¿Dónde lo ubico?</span></h2>
+                                <tr>
+                                    <td>
+                                        <a class="btn btn-primary flujo-descarte__boton" href="#" role="button">
+                                            <img src="./assets/imagen/telefono.png" alt="" width="30" class="me-2" />
+                                            Telefonía
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">Cuando el cliente reporte problemas con
+                                            llamadas telefónicas entrantes o
+                                            salientes.</p>
+                                    </td>
+                                </tr>
 
-        <p class="desc-item mb-3">El Flujo de Descartes para CAL Inbound y CAL Digital, lo encuentras en el <a
-                href="#">ID
-                1231 en
-                Infórmate</a>.</p>
+                                <tr>
+                                    <td><a class="btn btn-primary flujo-descarte__boton" href="#" role="button">
+                                            <img src="./assets/imagen/chat.png" alt="" width="30" class="me-2" />
+                                            Mensajería
+                                        </a></td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">Cuando el cliente reporte problemas con
+                                            mensajes de texto entrantes o salientes.
+                                        </p>
+                                    </td>
+                                </tr>
 
-        <div class="row mb-3">
-            <div class="col-md-4 subtitle">
-                <h2 class="subtitle"><span>¿Cuántos flujos son?</span></h2>
+                                <tr>
+                                    <td><a class="btn btn-primary flujo-descarte__boton" href="#" role="button">
+                                            <img src="./assets/imagen/entel-express.png" alt="" width="30"
+                                                class="me-2" />
+                                            Roaming</a>
+                                    </td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">Cuando el cliente reporte problemas con
+                                            el servicio roaming (datos o voz).</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><a class="btn btn-primary flujo-descarte__boton" href="#" role="button">
+                                            <img src="./assets/imagen/app-entel.png" alt="" width="30" class="me-2" />
+                                            APP
+                                            Ilimitadas</a>
+                                    </td>
+                                    <td>
+                                        <p class="flujo-descarte__descripcion">Cuando el cliente reporte problemas con
+                                            aplicaciones ilimitadas.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="nota">Descubre mayor detalle de cada flujo en el <a
+                                href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1231"
+                                target="_blank">ID 1231</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-8 subtitle">
-                <h2 class="subtitle"><span>¿Cuándo lo utilizo?</span></h2>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <a href="./falla-navegacion.html" class="btn-item btn btn-primary bg-cyan">Falla de navegación - Sin servicio</a>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Cuando no permite navegar en ninguna página o app, aparece el mensaje
-                    "Sin Internet" o "No hay conexión a internet". O, cuando no tenga ninguno de los 3
-                    servicios: navegación, telefonía y SMS.</span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <button class="btn-item btn btn-primary bg-purple">Falla de navegación - lentitud intermitencia</button>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Las páginas web o aplicaciones se demoran en cargar.</span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <button class="btn-item btn btn-primary bg-cyan">Falla de telefonía</button>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Cuando el cliente reporta problemas con llamadas telefónicas entrantes o
-                    salientes.</span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <button class="btn-item btn btn-primary bg-purple">Falla de mensajería</button>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Cuando el cliente reporta problemas con mensajes de texto entrantes o
-                    salientes.</span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <button class="btn-item btn btn-primary bg-cyan">Falla de roaming</button>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Cuando el cliente reporta problemas con el servicio roaming (datos o
-                    voz).</span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <button class="btn-item btn btn-primary bg-purple">Flujo de fallas APP ilimitadas</button>
-            </div>
-
-            <div class="col-md-8">
-                <span class="desc-item">Cuando el cliente reporta problemas con aplicaciones ilimitadas.</span>
-            </div>
-        </div>
-
-        <div class="alert-warning">
-            <img alt="Alerta" src="assets/images/alerta.png" class="alert-warning__image" />
-
-            <p>En el <span class="fw-bold">paso 3 del flujo por lentitud</span> y el <span class="fw-bold">paso
-                    6 del flujo sin servicio</span>, debemos colocar <span class="text-blue fw-bold">las
-                    coordenadas (latitud y longitud)</span> del
-                lugar donde el cliente presenta problemas de navegación. Estos datos podemos obtenerlos de <span
-                    class="text-blue fw-bold">Google Maps</span>.</p>
         </div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
