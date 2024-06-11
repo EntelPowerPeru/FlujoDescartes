@@ -7,6 +7,7 @@
     <title>Flujo de descarte</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/flujo-descarte-lentitud.css">
 </head>
 
@@ -24,8 +25,8 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="card rounded shadow border-0">
                         <div class="card-body p-4 bg-white rounded">
-                            <div class="row mb-2">
-                                <div class="col">
+                            <div class="row mb-4">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/alerta.png" alt="" class="opcion__img" />
@@ -34,12 +35,12 @@
                                         <a href="./falla-masiva.html" role="button" class="btn btn-primary opcion__boton">Paso 1</a>
 
                                         <h2 class="opcion__titulo">Falla masiva</h2>
-
-                                    <div class="dot" style="transform:scaleY(-1);--c:var(--blue);width:150px;--r:5px;"></div>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/antena.png" alt="" class="opcion__img" />
@@ -49,9 +50,11 @@
 
                                         <h2 class="opcion__titulo">SS relacionado</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/verificar.png" alt="" class="opcion__img" />
@@ -61,130 +64,177 @@
 
                                         <h2 class="opcion__titulo">Validación - línea activa</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col order-3">
+                                <div class="col position-relative order-3">
                                     <div class="opcion">
                                         <div class="opcion__imagen opcion__imagen--blue">
                                             <img src="./assets/imagen/imei.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton opcion__boton--cyan">Paso 4</button>
+                                        <a href="./imei-blacklist.html" role="button" class="btn btn-primary opcion__boton">Paso 4</a>
 
                                         <h2 class="opcion__titulo">IMEI en blacklist</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-down-fill position-absolute" style="bottom: -20px; left: 50%;"></i>
                                 </div>
                             </div>
 
-                            <div class="row mb-2">
-                                <div class="col order-5">
+                            <div class="row mb-4">
+                                <div class="col position-relative order-5">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/engranaje.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 5</button>
+                                        <a href="./aprovisionamiento.html" role="button" class="btn btn-primary opcion__boton">Paso 5</a>
 
                                         <h2 class="opcion__titulo">Aprovisionamiento</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-left-fill position-absolute" style="top: 40%; left: 0px;"></i>
                                 </div>
 
-                                <div class="col order-4">
+                                <div class="col position-relative order-4">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/base-datos.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 6</button>
+                                        <a href="./servicio-datos.html" role="button" class="btn btn-primary opcion__boton">Paso 6</a>
 
                                         <h2 class="opcion__titulo">Servicio de datos</h2>
-
                                     </div>
+
+                                    <i class="bi bi-caret-left-fill position-absolute" style="top: 40%; left: 0px;"></i>
                                 </div>
 
-                                <div class="col order-3">
+                                <div class="col position-relative order-3">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/alerta-2.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 7</button>
+                                        <a href="./problema-solo-lugar.html" role="button" class="btn btn-primary opcion__boton">Paso 7</a>
 
                                         <h2 class="opcion__titulo">Problema en un solo lugar</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-left-fill position-absolute" style="top: 40%; left: 0px;"></i>
                                 </div>
 
-                                <div class="col order-2">
+                                <div class="col position-relative order-2">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/antena-2.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 8</button>
+                                        <a href="./antena-alto-trafico.html" role="button" class="btn btn-primary opcion__boton">Paso 8</a>
 
                                         <h2 class="opcion__titulo">Antena con alto tráfico de datos</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-left-fill position-absolute" style="top: 40%; left: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen opcion__imagen--blue">
                                             <img src="./assets/imagen/verificar.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton opcion__boton--cyan">Paso 9</button>
+                                        <a href="./validacion-fair-use.html" role="button" class="btn btn-primary opcion__boton">Paso 9</a>
 
                                         <h2 class="opcion__titulo">Validación de fair use</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-down-fill position-absolute" style="bottom: -20px; left: 50%;"></i>
                                 </div>                                
                             </div>
 
                             <div class="row">
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/verificar-muted.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 10</button>
+                                        <a href="./validacion-saldo-prepago.html" role="button" class="btn btn-primary opcion__boton">Paso 10</a>
 
-                                        <h2 class="opcion__titulo">Validación de saldos asignados</h2>
+                                        <h2 class="opcion__titulo">Validación de saldo prepago</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/verificar-muted.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 11</button>
+                                        <a href="./validacion-saldo-postpago.html" role="button" class="btn btn-primary opcion__boton">Paso 11</a>
+
+                                        <h2 class="opcion__titulo">Validación de saldo postpago</h2>
+                                    </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                                </div>
+
+                                <div class="col position-relative">
+                                    <div class="opcion">
+                                        <div class="opcion__imagen">
+                                            <img src="./assets/imagen/verificar-muted.png" alt="" class="opcion__img" />
+                                        </div>
+
+                                        <a href="./validacion-redes.html" role="button" class="btn btn-primary opcion__boton">Paso 12</a>
 
                                         <h2 class="opcion__titulo">Validación de redes</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/validacion.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 12</button>
+                                        <a href="./validacion-apn.html" role="button" class="btn btn-primary opcion__boton">Paso 13</a>
 
                                         <h2 class="opcion__titulo">Validación de APN</h2>
                                     </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
                                 </div>
 
-                                <div class="col">
+                                <div class="col position-relative">
                                     <div class="opcion">
                                         <div class="opcion__imagen">
                                             <img src="./assets/imagen/reset.png" alt="" class="opcion__img" />
                                         </div>
 
-                                        <button type="button" class="btn btn-primary opcion__boton">Paso 13</button>
+                                        <a href="./reseteo-datos.html" role="button" class="btn btn-primary opcion__boton">Paso 14</a>
 
                                         <h2 class="opcion__titulo">Reseteo de datos</h2>
+                                    </div>
+
+                                    <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                                </div>
+
+                                <div class="col position-relative">
+                                    <div class="opcion">
+                                        <div class="opcion__imagen">
+                                            <img src="./assets/imagen/reset.png" alt="" class="opcion__img" />
+                                        </div>
+
+                                        <a href="./dns.html" role="button" class="btn btn-primary opcion__boton">Paso 15</a>
+
+                                        <h2 class="opcion__titulo">DNS</h2>
                                     </div>
                                 </div>
                             </div>
