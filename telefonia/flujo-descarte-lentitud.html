@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de descarte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/flujo-descarte-lentitud.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <header class="text-center text-white">
+            <h1 class="display-6 fw-bold titulo">Flujo de descartes - Telefonía</h1>
+        </header>
+
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-4 bg-white rounded">
+                        <!-- Fila 1 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta.png" alt="Falla masiva" class="opcion__img" />
+                                    </div>
+                                    <a href="falla-masiva.html" role="button" class="btn btn-primary opcion__boton">Paso 1</a>
+                                    <h2 class="opcion__titulo">Falla masiva</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/antena.png" alt="SS relacionado" class="opcion__img" />
+                                    </div>
+                                    <a href="ss-relacionado.html" role="button" class="btn btn-primary opcion__boton">Paso 2</a>
+                                    <h2 class="opcion__titulo">SS relacionado</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar.png" alt="Validación línea activa" class="opcion__img" />
+                                    </div>
+                                    <a href="validacion-linea-activa.html" role="button" class="btn btn-primary opcion__boton">Paso 3</a>
+                                    <h2 class="opcion__titulo">Validación línea activa</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/imei.png" alt="IMEI en blacklist" class="opcion__img" />
+                                    </div>
+                                    <a href="imei-blacklist.html" role="button" class="btn btn-primary opcion__boton">Paso 4</a>
+                                    <h2 class="opcion__titulo">IMEI en blacklist</h2>
+                                </div>
+                                <i class="bi bi-caret-down-fill position-absolute" style="bottom: -20px; left: 50%;"></i>
+                            </div>
+                        </div>
+
+                        <!-- Fila 2 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta-2.png" alt="Portabilidad" class="opcion__img" />
+                                    </div>
+                                    <a href="portabilidad.html" role="button" class="btn btn-primary opcion__boton">Paso 8</a>
+                                    <h2 class="opcion__titulo">Portabilidad</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar.png" alt="IMSI no coincide" class="opcion__img" />
+                                    </div>
+                                    <a href="imsi.html" role="button" class="btn btn-primary opcion__boton">Paso 7</a>
+                                    <h2 class="opcion__titulo">IMSI no coincide</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/base-datos.png" alt="Red Registrada" class="opcion__img" />
+                                    </div>
+                                    <a href="red-registrada.html" role="button" class="btn btn-primary opcion__boton">Paso 6</a>
+                                    <h2 class="opcion__titulo">Red Registrada</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/antena.png" alt="Cobertura" class="opcion__img" />
+                                    </div>
+                                    <a href="cobertura.html" role="button" class="btn btn-primary opcion__boton">Paso 5</a>
+                                    <h2 class="opcion__titulo">Cobertura</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                        </div>
+
+                        <!-- Fila 3 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/engranaje.png" alt="Aprovisionamiento" class="opcion__img" />
+                                    </div>
+                                    <a href="aprovisionamiento.html" role="button" class="btn btn-primary opcion__boton">Paso 9</a>
+                                    <h2 class="opcion__titulo">Aprovisionamiento</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/reset.png" alt="Reinicio de equipo" class="opcion__img" />
+                                    </div>
+                                    <a href="reinicio-de-equipo.html" role="button" class="btn btn-primary opcion__boton">Paso 10</a>
+                                    <h2 class="opcion__titulo">Reinicio de equipo</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar-muted.png" alt="Validación de saldos asignados" class="opcion__img" />
+                                    </div>
+                                    <a href="validacion-saldo-postpago.html" role="button" class="btn btn-primary opcion__boton">Paso 11</a>
+                                    <h2 class="opcion__titulo">Validación de Saldo Postpago</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar-muted.png" alt="Validación de saldos asignados" class="opcion__img" />
+                                    </div>
+                                    <a href="validacion-saldo-prepago.html" role="button" class="btn btn-primary opcion__boton">Paso 12</a>
+                                    <h2 class="opcion__titulo">Validación de Saldo Prepago</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar-muted.png" alt="Marcación correcta" class="opcion__img" />
+                                    </div>
+                                    <a href="marcacion.html" role="button" class="btn btn-primary opcion__boton">Paso 13</a>
+                                    <h2 class="opcion__titulo">Marcación correcta</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                        </div>
+
+                        <!-- Fila 4 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/reset.png" alt="Ruido en llamada" class="opcion__img" />
+                                    </div>
+                                    <a href="ruido.html" role="button" class="btn btn-primary opcion__boton">Paso 18</a>
+                                    <h2 class="opcion__titulo">Ruido en llamada</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/reset.png" alt="Corte de llamada" class="opcion__img" />
+                                    </div>
+                                    <a href="corte.html" role="button" class="btn btn-primary opcion__boton">Paso 17</a>
+                                    <h2 class="opcion__titulo">Corte de llamada</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta-2.png" alt="Falla desde un número particular" class="opcion__img" />
+                                    </div>
+                                    <a href="falla-particular.html" role="button" class="btn btn-primary opcion__boton">Paso 16</a>
+                                    <h2 class="opcion__titulo">Falla desde un número particular</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar.png" alt="Validar llamadas entrantes de otro operador" class="opcion__img" />
+                                    </div>
+                                    <a href="validar-llamadas.html" role="button" class="btn btn-primary opcion__boton">Paso 15</a>
+                                    <h2 class="opcion__titulo">Validar llamadas entrantes de otro operador</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/validacion.png" alt="Validación desvío/restricción de llamadas" class="opcion__img" />
+                                    </div>
+                                    <a href="validar-desvio.html" role="button" class="btn btn-primary opcion__boton">Paso 14</a>
+                                    <h2 class="opcion__titulo">Validación desvío/restricción de llamadas</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.0/svg.min.js"></script>
+    <script src="scripts/flujo-descarte-lentitud.js"></script>
+</body>
+
+</html>

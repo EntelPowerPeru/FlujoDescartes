@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación SS Relacionado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva-opcion.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="opcion">
+                                    <div class="opcion__imagen mb-3">
+                                        <img src="/assets/imagen/speak.png" alt="" class="opcion__img" />
+                                    </div>
+
+                                    <h1 class="opcion__titulo m-0 mb-3">Speeches</h1>
+
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal_speeches"
+                                        class="opcion_boton btn btn-primary">
+                                        Ver más
+                                        <img src="/assets/imagen/fibra-wifi-total.png" alt="" width="30"
+                                            class="ms-2" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_speeches">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Speeches</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 mb-3 mb-md-0">
+                                <div class="informacion">
+                                    <h2 class="informacion__titulo">Dentro de plazo</h2>
+                                    <p class="informacion_descripcion">Valido que su caso aún está en revisión. En un plazo máximo de 24h nos contactaremos con usted; sin embargo, en caso necesitemos más tiempo, estaremos ingresando un reclamo y le llegará un mensaje de texto con esta información. No se preocupe, estaremos trabajando para solucionar su caso lo más pronto posible.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 mb-3 mb-md-0">
+                                <div class="informacion">
+                                    <h2 class="informacion__titulo">Fuera de plazo - Derivación a otra área</h2>
+                                    <p class="informacion_descripcion">Aún estamos en revisión de su caso, le pedimos disculpas del caso, voy a escalar nuevamente su caso al área especializada para poder ayudarlo y que le den prioridad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

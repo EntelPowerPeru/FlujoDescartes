@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="display-5 fw-bold titulo">Chats de la Cola Roaming - 2do Nivel</h1>
+
+                                <div class="imagen">
+                                    <img src="/assets/imagen/alerta-white.png" alt="DNS" class="imagen__img">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="informacion mb-3">
+                                    <h2 class="informacion__titulo">Lineamientos</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__lista-item">Los chats que ingresan por la cola de Roaming - 2do nivel son casos que ya fueron revisados por el back roaming pero el cliente ha indicado que mantiene el inconveniente y necesita asistencia.</li>
+                                        <li class="informacion__lista-item">Verificar en Siebel si el cliente tiene una SS asociada a un problema de roaming.</li>
+                                        <li class="informacion__lista-item">Verificar lo indicado por back roaming en actividades de la SS y guiar/ayudar al cliente.</li>
+                                        <li class="informacion__lista-item">Si no se da solución al caso, derivar el caso al back roaming con una nueva SS.</li>
+                                        <li class="informacion__lista-item">Si se desea enviar el caso a segundo nivel, recuerda seguir los pasos del siguiente ID <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/6687" target="_blank">https://informatepersonas.custhelp.com/app/answers/detail/a_id/6687</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="informacion mb-3">
+                                    <h2 class="informacion__titulo">Pantallas/Validaciones</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__lista-item">Validar si cliente tiene una SS reportando un problema roaming.</li>
+                                        <li class="informacion__lista-item">Validar en "Actividades" de la SS si existe una respuesta/solución por el lado del back roaming.</li>
+                                        <li class="informacion__lista-item">Ayudar al cliente en base a lo indicado por back roaming.</li>
+                                        <li class="informacion__lista-item">Si el inconveniente persiste, derivar al back roaming con una nueva SS.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="decision">
+                                    <h2 class="desicion__titulo mb-3">¿Se dió solución al caso?</h2>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="desicion__opcion">
+                                                <div class="desicion__label">&#10003; SI</div>
+
+                                                <a href="./chats-de-la-cola-roaming-opcion.html" role="button" class="desicion__boton btn btn-primary">Sí, tipificar</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="desicion__opcion">
+                                                <div class="desicion__label">&#10007; NO</div>
+
+                                                <a href="" role="button" class="desicion__boton btn btn-primary">No, dar speech y tipificar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

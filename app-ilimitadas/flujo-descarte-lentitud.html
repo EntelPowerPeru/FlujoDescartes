@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de descarte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/flujo-descarte-lentitud.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <header class="text-center text-white">
+            <h1 class="display-6 fw-bold titulo">Flujo de descartes - APP Ilimitadas</h1>
+        </header>
+
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-4 bg-white rounded">
+                        <!-- Fila 1 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta.png" alt="Falla masiva" class="opcion__img" />
+                                    </div>
+                                    <a href="falla-masiva.html" role="button" class="btn btn-primary opcion__boton">Paso 1</a>
+                                    <h2 class="opcion__titulo">Falla masiva</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/antena.png" alt="SS Relacionado" class="opcion__img" />
+                                    </div>
+                                    <a href="ss-relacionado.html" role="button" class="btn btn-primary opcion__boton">Paso 2</a>
+                                    <h2 class="opcion__titulo">SS Relacionado</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar.png" alt="Cumple condiciones comerciales" class="opcion__img" />
+                                    </div>
+                                    <a href="condiciones-comerciales.html" role="button" class="btn btn-primary opcion__boton">Paso 3</a>
+                                    <h2 class="opcion__titulo">Cumple condiciones comerciales</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta-2.png" alt="Modo gratuito activo" class="opcion__img" />
+                                    </div>
+                                    <a href="gratuito-activo.html" role="button" class="btn btn-primary opcion__boton">Paso 4</a>
+                                    <h2 class="opcion__titulo">Modo gratuito activo</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                        </div>
+
+                        <!-- Fila 2 -->
+                        <div class="row mb-4">
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta-2.png" alt="Actualizar APP" class="opcion__img" />
+                                    </div>
+                                    <a href="cache.html" role="button" class="btn btn-primary opcion__boton">Paso 7</a>
+                                    <h2 class="opcion__titulo">Borrar Memoria Cache</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/verificar.png" alt="¿APN en uso OK?" class="opcion__img" />
+                                    </div>
+                                    <a href="apn-en-uso.html" role="button" class="btn btn-primary opcion__boton">Paso 6</a>
+                                    <h2 class="opcion__titulo">¿APN en uso OK?</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+
+
+                            <div class="col position-relative">
+                                <div class="opcion">
+                                    <div class="opcion__imagen">
+                                        <img src="/assets/imagen/alerta-2.png" alt="Actualizar APP" class="opcion__img" />
+                                    </div>
+                                    <a href="actualizar-app.html" role="button" class="btn btn-primary opcion__boton">Paso 5</a>
+                                    <h2 class="opcion__titulo">Actualizar APP</h2>
+                                </div>
+                                <i class="bi bi-caret-right-fill position-absolute" style="top: 40%; right: 0px;"></i>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.0/svg.min.js"></script>
+    <script src="scripts/flujo-descarte-lentitud.js"></script>
+</body>
+
+</html>

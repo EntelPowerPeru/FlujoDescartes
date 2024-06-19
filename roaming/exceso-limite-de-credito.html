@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de saldo prepago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="display-5 fw-bold titulo">Exceso Limite de Credito</h1>
+
+                                <div class="imagen">
+                                    <img src="/assets/imagen/alerta-white.png" alt="Validación de saldo prepago"
+                                        class="imagen__img">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="informacion mb-3">
+                                    <h2 class="informacion__titulo">Lineamientos</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__lista-item">ESCENARIO: El cliente podría indicar que recibió un SMS informando sobre el límite de su línea de crédito o que no puede usar su servicio roaming.</li>
+                                        <li class="informacion__lista-item">Revisar en Siebel si el cliente tiene la alerta de Finanzas sobre ELC: Consulta/Suspensión/Suspensión Robo/Temp/Definitiv</li>
+                                        <li class="informacion__lista-item">Revisar en OC / OV si el cliente tiene sus servicios roaming bloqueados.</li>
+                                        <li class="informacion__lista-item">Validar en qué país se encuentra el cliente y proceder según el escenario indicado en informate id 1061 (escenario 2) <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1061/kw/exceso%20limite%20de%20credito" target="_blank">https://informatepersonas.custhelp.com/app/answers/detail/a_id/1061/kw/exceso%20limite%20de%20credito</a></li>
+                                        <li class="informacion__lista-item">Si cliente quiere generar un RECLAMO, sigue el flujo regular <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819" target="_blank">https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819</a></li>
+                                    </ul>
+
+                                    <div class="informacion__imagen">
+                                        <img src="" alt="" class="informacion__img" />
+                                    </div>
+                                </div>
+
+                                <div class="decision">
+                                    <h2 class="desicion__titulo mb-3">¿Problema relacionado a exceso de límite de crédito?</h2>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="desicion__opcion">
+                                                <div class="desicion__label">&#10003; SI</div>
+
+                                                <a href="./exceso-limite-de-credito-opcion.html" role="button"
+                                                    class="desicion__boton btn btn-primary">Sí, dar speech y tipificar</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="desicion__opcion">
+                                                <div class="desicion__label">&#10007; NO</div>
+
+                                                <a href="./ss-relacionado.html" role="button"
+                                                    class="desicion__boton btn btn-primary">No, ir al siguiente paso</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

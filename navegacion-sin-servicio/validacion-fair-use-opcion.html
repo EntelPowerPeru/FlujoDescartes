@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando en Fair Use</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva-opcion.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="opcion">
+                                    <div class="opcion__imagen mb-3">
+                                        <img src="/assets/imagen/speak.png" alt="" class="opcion__img" />
+                                    </div>
+
+                                    <h1 class="opcion__titulo m-0 mb-3">Speeches</h1>
+
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal_speeches"
+                                        class="opcion_boton btn btn-primary">
+                                        Ver más
+                                        <img src="/assets/imagen/fibra-wifi-total.png" alt="" width="30" class="ms-2" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class=" opcion">
+                                    <div class="opcion__imagen mb-3">
+                                        <img src="/assets/imagen/file-search.png" alt="" class="opcion__img" />
+                                    </div>
+
+                                    <h1 class="opcion__titulo m-0 mb-3">Tipificación y plantilla</h1>
+
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal_tipificacion_plantilla"
+                                        class="opcion_boton btn btn-primary">
+                                        Ver más
+                                        <img src="/assets/imagen/fibra-wifi-total.png" alt="" width="30" class="ms-2" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_speeches">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Speeches</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 mb-3 mb-md-0">
+                                <div class="informacion">
+                                    <h2 class="informacion__titulo">Cliente esta en navegando en fair use</h2>
+
+                                    <p class="informacion_descripcion">Verifico que tiene el plan [Indicar nombre del plan] que le brinda XX gigas de alta velocidad, le comento que luego de consumir estos gigas puede continuar navegando ilimitadamente pero a una velocidad reducida; es por ello que siente una lentitud en su navegación. Todos los XX es el inicio de su período de facturación y se le asigna nuevamente sus gigas de alta velocidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Tipificación y plantilla</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="informacion gap-2">
+                                    <h2 class="informacion__titulo">TIPO: Problema</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li><span class="fw-bold">ÁREA:</span> Datos (Navegación)</li>
+                                        <li class="informacion__item"><span class="fw-bold">SUBÁREA:</span> Fair Use</li>
+                                        <li class="informacion__item"><span class="fw-bold">ESTADO:</span> Cerrado</li>
+                                    </ul>
+
+                                    <button type="button" data-bs-target="#modal_tipificacion_plantilla_problema"
+                                        data-bs-toggle="modal" class="informacion__boton btn btn-primary">Ver plantilla</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="informacion gap-2">
+                                    <h2 class="informacion__titulo">TIPO: Reclamo</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__item"><span class="fw-bold">ÁREA:</span> Datos (Navegación)</li>
+                                        <li class="informacion__item"><span class="fw-bold">SUBÁREA:</span> Fair Use</li>
+                                        <li class="informacion__item"><span class="fw-bold">ESTADO:</span> Pendiente</li>
+                                        <li class="informacion__item"><span class="fw-bold">GRUPO:</span> Primera Instancia_Personas</li>
+                                    </ul>
+
+                                    <button type="button" data-bs-target="#modal_tipificacion_plantilla_reclamo"
+                                        data-bs-toggle="modal" class="informacion__boton btn btn-primary">Ver plantilla</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla_problema">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-header--cyan">
+                    <h1 class="modal-title text-black">Plantilla: Problema - Fair Use</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="plantilla container-fluid">
+                        <ul class="plantilla__lista">
+                            <li class="mb-2">Nro Activo:</li>
+                            <li class="mb-2">Plan:</li>
+                            <li class="mb-2">Consumo MB:</li>
+                            <li class="mb-2">Fair use plan MB:</li>
+                            <li class="mb-2">Descripción:</li>
+                            <li class="mb-2">Dirección de falla:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-target="#modal_tipificacion_plantilla"
+                        data-bs-toggle="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla_reclamo">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class=" modal-content">
+                <div class="modal-header modal-header--cyan">
+                    <h1 class="modal-title text-black">Plantilla: Reclamo - Fair Use</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="plantilla container-fluid">
+                        <ul class="plantilla__lista">
+                            <li class="mb-2">Nro Activo:</li>
+                            <li class="mb-2">Plan:</li>
+                            <li class="mb-2">Consumo MB:</li>
+                            <li class="mb-2">Fair use plan MB:</li>
+                            <li class="mb-2">Dirección de falla:</li>
+                            <li class="mb-2">Nombre completo del reclamante y DNI o CE:</li>
+                            <li class="mb-2">Correo electrónico para notificación:</li>
+                            <li class="mb-2">Dirección de notificación (solicitar en caso no tenga correo o no autorice):</li>
+                            <li class="mb-2">Distrito/ provincia/departamento:</li>
+                            <li class="mb-2">Referencias:</li>
+                            <li class="mb-2">Teléfono de contacto (distinto al Equipo en reclamo):</li>
+                            <li class="mb-2">Nro Entel en reclamo:</li>
+                            <li class="mb-2">Marca y Modelo de equipo (en uso):</li>
+                            <li class="mb-2">Fecha inicio del inconveniente:</li>
+                            <li class="mb-2">Detalle del inconveniente:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-target="#modal_tipificacion_plantilla"
+                        data-bs-toggle="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falla masiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="display-5 fw-bold titulo">Corte de llamada</h1>
+
+                                <div class="imagen">
+                                    <img src="/assets/imagen/alerta-white.png" alt="Fallas masivas" class="imagen__img">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="informacion mb-3">
+                                    <h2 class="informacion__titulo">Lineamientos</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__lista-item">Cuando cliente indica que la llamada se corta luego de determinado tiempo.</li>
+                                        <li class="informacion__lista-item">Validar con el cliente si le sucede en todo lugar o en un lugar específico.</li>
+                                        <li class="informacion__lista-item">Si le sucede en todo lugar, validar en el equipo del cliente que no haya configurado en el equipo un máximo de duración por llamada.</li>
+                                        <li class="informacion__lista-item">Indicar al cliente que debe realizar unos pasos en su teléfono y esto probablemente corte la llamada. Por ello, debe brindarte otro número de contacto para llamarlo en ese mismo instante y poder validar en línea que se haya solucionado el inconveniente (si no tiene, informarle que luego de realizar estos pasos debería estar solucionado el inconveniente)</li>
+                                        <li class="informacion__lista-item">Realizar los descartes según el modelo del equipo.</li>
+                                        <li class="informacion__lista-item">Si luego de los descartes sigue sin funcionar y le sucede en todo lugar, informale al cliente que debe probar su SIM en otro equipo.</li>
+                                        <li class="informacion__lista-item">Si el problema se soluciona, infórmale al cliente que debe dirigirse a tienda para la revisión de su equipo.</li>
+                                        <li class="informacion__lista-item">Si el problema persiste en otro equipo, derivar a plataforma técnica.</li>
+                                        <li class="informacion__lista-item">Si el problema le sucede en un solo lugar, derivar a plataforma técnica.</li>
+                                        <li class="informacion__lista-item">Si se desea enviar el caso a segundo nivel, recuerda seguir los pasos del siguiente ID <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/6687">https://informatepersonas.custhelp.com/app/answers/detail/a_id/6687</a></li>
+                                        <li class="informacion__lista-item">Si cliente quiere generar un RECLAMO, sigue el flujo regular <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819">https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819</a></li>
+                                    </ul>
+
+                                    <div class="informacion__imagen">
+                                        <img src="" alt="" class="informacion__img" />
+                                    </div>
+                                </div>
+
+                                <div class="informacion mb-3">
+                                    <h2 class="informacion__titulo">Validaciones</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__lista-item">Ingresar a Teléfono > Configuración > Llamada > Restricción de llamadas (Todo debe estar en NO o Desactivado).</li>
+                                        <li class="informacion__lista-item">Validar que el cliente no tenga ningún app donde se haya configurado una duración máxima de llamada (Temporizador de llamadas, Identificador de llamadas, Grabador de llamadas).</li>
+                                    </ul>
+
+                                    <div class="decision">
+                                        <h2 class="desicion__titulo mb-3">¿Configuración del equipo está ok pero se sigue cortando y es en todo lugar?</h2>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="desicion__opcion">
+                                                    <div class="desicion__label">&#10003; Sí</div>
+
+                                                    <a href="./corte-opcion.html" role="button" class="desicion__boton btn btn-primary">Si, probar SIM en otro equipo</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="desicion__opcion">
+                                                    <div class="desicion__label">&#10007; No</div>
+
+                                                    <a href="./ruido.html" role="button" class="desicion__boton btn btn-primary">Se corrigió. Tipificar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

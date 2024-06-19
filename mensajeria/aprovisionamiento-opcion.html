@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falla de Telefonía Aprovisionamiento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/falla-masiva-opcion.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0">
+                    <div class="card-body p-5 bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="opcion">
+                                    <div class="opcion__imagen mb-3">
+                                        <img src="/assets/imagen/speak.png" alt="" class="opcion__img" />
+                                    </div>
+
+                                    <h1 class="opcion__titulo m-0 mb-3">Speeches</h1>
+
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal_speeches"
+                                        class="opcion_boton btn btn-primary">
+                                        Ver más
+                                        <img src="/assets/imagen/fibra-wifi-total.png" alt="" width="30"
+                                            class="ms-2" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="opcion">
+                                    <div class="opcion__imagen mb-3">
+                                        <img src="/assets/imagen/file-search.png" alt="" class="opcion__img" />
+                                    </div>
+
+                                    <h1 class="opcion__titulo m-0 mb-3">Tipificación y plantilla</h1>
+
+                                    <button type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modal_tipificacion_plantilla"
+                                        class="opcion_boton btn btn-primary">
+                                        Ver más
+                                        <img src="/assets/imagen/fibra-wifi-total.png" alt="" width="30"
+                                            class="ms-2" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/" role="button" class="btn btn-primary boton-regresar">
+                            <img src="/assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_speeches">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Speeches</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 mb-3 mb-md-0">
+                                <div class="informacion">
+                                    <h2 class="informacion__titulo">Derivación a otra área (si lo reporta el titular)</h2>
+                                    <p class="informacion_descripcion">
+                                        Hemos realizado las validaciones correspondientes y necesitamos escalar su caso al área especializada para poder ayudarlo. En un plazo máximo de 24 horas nos contactaremos con usted; sin embargo, en caso necesitemos más tiempo, estaremos ingresando un reclamo y le llegará un mensaje de texto con esta información. Nos podría brindar un correo electrónico o dirección física a donde enviar su carta de respuesta? No se preocupe, estaremos trabajando para solucionar su caso lo más pronto posible.
+                                    </p>
+                                    <h2 class="informacion__titulo">Derivación a otra área (si lo reporta el usuario)</h2>
+                                    <p class="informacion_descripcion">
+                                        Hemos realizado las validaciones correspondientes y necesitamos escalar su caso al área especializada para poder ayudarlo. No se preocupe, estaremos trabajando para solucionar su caso lo más pronto posible.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Tipificación y plantilla</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="informacion gap-2">
+                                    <h2 class="informacion__titulo">Problema - Falla de Telefonía Aprovisionamiento</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li><span class="fw-bold">Tipo:</span> Problema</li>
+                                        <li class="informacion__item"><span class="fw-bold">Área:</span> Mensajería</li>
+                                        <li class="informacion__item"><span class="fw-bold">Subárea:</span> SMS Local/Nacional</li>
+                                        <li class="informacion__item"><span class="fw-bold">Estado:</span> Pendiente</li>
+                                        <li class="informacion__item"><span class="fw-bold">Grupo:</span> Plataforma Técnica</li>
+                                    </ul>
+
+                                    <button type="button" data-bs-target="#modal_tipificacion_plantilla_problema"
+                                        data-bs-toggle="modal" class="informacion__boton btn btn-primary">Ver plantilla</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="informacion gap-2">
+                                    <h2 class="informacion__titulo">Solución Anticipada - Falla de Telefonía Aprovisionamiento</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__item"><span class="fw-bold">Tipo:</span> Problema</li>
+                                        <li class="informacion__item"><span class="fw-bold">Área:</span> Mensajería</li>
+                                        <li class="informacion__item"><span class="fw-bold">Subárea:</span> SMS Local/Nacional</li>
+                                        <li class="informacion__item"><span class="fw-bold">Estado:</span> Pendiente</li>
+                                        <li class="informacion__item"><span class="fw-bold">Subestado:</span> Solución Anticipada</li>
+                                        <li class="informacion__item"><span class="fw-bold">Grupo:</span> Plataforma Técnica</li>
+                                    </ul>
+
+                                    <button type="button" data-bs-target="#modal_tipificacion_plantilla_solucion_anticipada"
+                                        data-bs-toggle="modal" class="informacion__boton btn btn-primary">Ver plantilla</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="informacion gap-2">
+                                    <h2 class="informacion__titulo">Reclamo - Falla de Telefonía Aprovisionamiento</h2>
+
+                                    <ul class="informacion__lista">
+                                        <li class="informacion__item"><span class="fw-bold">Tipo:</span> Reclamo</li>
+                                        <li class="informacion__item"><span class="fw-bold">Área:</span> Mensajería</li>
+                                        <li class="informacion__item"><span class="fw-bold">Subárea:</span> SMS Local/Nacional</li>
+                                        <li class="informacion__item"><span class="fw-bold">Estado:</span> Pendiente</li>
+                                        <li class="informacion__item"><span class="fw-bold">Grupo:</span> PRIMERA INSTANCIA_PERSONAS</li>
+                                    </ul>
+
+                                    <button type="button" data-bs-target="#modal_tipificacion_plantilla_reclamo"
+                                        data-bs-toggle="modal" class="informacion__boton btn btn-primary">Ver plantilla</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla_problema">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-header--cyan">
+                    <h1 class="modal-title text-black">Plantilla: Problema - Falla de Telefonía Aprovisionamiento</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="plantilla container-fluid">
+                        <ul class="plantilla__lista">
+                            <li class="mb-2">N° Entel con problema:</li>
+                            <li class="mb-2">Marca y Modelo del equipo:</li>
+                            <li class="mb-2">N° de contacto:</li>
+                            <li class="mb-2">Mensaje de error:</li>
+                            <li class="mb-2">Detalle del inconveniente:</li>
+                            <li class="mb-2">Pasos realizados para solución:</li>
+                            <li class="mb-2">Departamento / Provincia / Distrito:</li>
+                            <li class="mb-2">Dirección completa de la falla:</li>
+                            <li class="mb-2">Plan:</li>
+                            <li class="mb-2">Fecha inicio del inconveniente:</li>
+                            <li class="mb-2">Medio de notificación: [indicar correo o dirección física]</li>
+                            <li class="mb-2">Correo electrónico para notificación:</li>
+                            <li class="mb-2">Dirección de notificación (solicitar en caso no tenga correo o no autorice):</li>
+                            <li class="mb-2">Modo de red no aprovisionado (2G, 3G, 4G, 5G):</li>
+                            <li class="mb-2">Modo de red registrado (2G, 3G, 4G, 5G):</li>
+                            <li class="mb-2">Saldo (minutos o saldo monetario):</li>
+                            <li class="mb-2">¿Falla de sms salientes, entrantes o ambas?:</li>
+                            <li class="mb-2">Nro origen y Operador:</li>
+                            <li class="mb-2">Nro destino y Operador:</li>
+                            <li class="mb-2">Estado de Servicios en OV:</li>
+                            <li class="mb-2">Estado de Servicios Adicionales en OV:</li>
+                            <li class="mb-2">Estado de Servicios Suplementarios en OV:</li>
+                            <li class="mb-2">Nombre y Nro de contacto:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-target="#modal_tipificacion_plantilla"
+                        data-bs-toggle="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla_solucion_anticipada">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-header--cyan">
+                    <h1 class="modal-title text-black">Plantilla: Solución Anticipada - Falla de Telefonía Aprovisionamiento</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="plantilla container-fluid">
+                        <ul class="plantilla__lista">
+                            <li class="mb-2">¿Cliente especificó que desea ingresar reclamo? (Sí/No)</li>
+                            <li class="mb-2">Cliente acepto revisión para POSIBLE solución anticipada (Sí/No)</li>
+                            <li class="mb-2">N° Entel:</li>
+                            <li class="mb-2">Plan tarifario:</li>
+                            <li class="mb-2">Marca y Modelo de equipo (en uso):</li>
+                            <li class="mb-2">Saldo (minutos o saldo monetario):</li>
+                            <li class="mb-2">¿Falla de llamadas salientes, entrantes o ambas?:</li>
+                            <li class="mb-2">Nro origen y Operador:</li>
+                            <li class="mb-2">Nro destino y Operador:</li>
+                            <li class="mb-2">Estado de Servicios en OPERATOR VIEW:</li>
+                            <li class="mb-2">Estado de Servicios Adicionales en OPERATOR VIEW:</li>
+                            <li class="mb-2">Estado de Servicios Suplementarios en OPERATOR VIEW:</li>
+                            <li class="mb-2">Fecha inicio del inconveniente:</li>
+                            <li class="mb-2">Detalle del inconveniente y pasos realizados para solución:</li>
+                            <li class="mb-2">Nombre y Nro de contacto:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-target="#modal_tipificacion_plantilla"
+                        data-bs-toggle="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_tipificacion_plantilla_reclamo">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-header--cyan">
+                    <h1 class="modal-title text-black">Plantilla: Reclamo - Falla de Telefonía Aprovisionamiento</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="plantilla container-fluid">
+                        <ul class="plantilla__lista">
+                            <li class="mb-2">Nombre completo del reclamante y DNI o CE:</li>
+                            <li class="mb-2">Correo electrónico para notificación:</li>
+                            <li class="mb-2">Dirección de notificación (solicitar en caso no tenga correo o no autorice):</li>
+                            <li class="mb-2">Distrito/ provincia/departamento:</li>
+                            <li class="mb-2">Referencias:</li>
+                            <li class="mb-2">Teléfono de contacto (distinto al Equipo en reclamo):</li>
+                            <li class="mb-2">Nro Entel en reclamo:</li>
+                            <li class="mb-2">Plan tarifario:</li>
+                            <li class="mb-2">Marca y Modelo de equipo (en uso):</li>
+                            <li class="mb-2">Saldo (minutos o saldo monetario):</li>
+                            <li class="mb-2">¿Falla de llamadas salientes, entrantes o ambas?:</li>
+                            <li class="mb-2">Nro origen y Operador:</li>
+                            <li class="mb-2">Nro destino y Operador:</li>
+                            <li class="mb-2">Estado de Servicios en OPERATOR VIEW:</li>
+                            <li class="mb-2">Estado de Servicios Adicionales en OPERATOR VIEW:</li>
+                            <li class="mb-2">Estado de Servicios Suplementarios en OPERATOR VIEW:</li>
+                            <li class="mb-2">Fecha inicio del inconveniente:</li>
+                            <li class="mb-2">Detalle del inconveniente y pasos realizados para solución:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-target="#modal_tipificacion_plantilla"
+                        data-bs-toggle="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
